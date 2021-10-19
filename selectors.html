@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>pet проект</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/selectors.css">
+</head>
+<body>
+    <!-- Селектор типа -->
+    <div>
+        <h1>Good Morning!</h2>
+        <h1>Good Day!</h2>
+    </div>
+
+    <!-- Селектор класс -->
+    <div>
+        <p class="text">Good Morning!</p>
+        <blockquote class="text">How are you?
+            </blockquote>
+    </div>
+
+     <!-- Несколько классов на элементе -->
+     <div>
+        <p class="text important-text">
+            Good Morning!
+        </p>
+        <p class="text important-text">
+            Good Afternoon!
+        </p>
+    </div>
+
+    <!-- Селектор id. Два одинаковых id / два id на элементе - ошибка.-->
+    <div>
+        <p id="thought">
+            А сегодня в завтрашний день не все могут смотреть. Вернее смотреть могут не только лишь все, мало кто может это делать.
+        </p>
+    </div>
+
+    <!-- Селектор потомков (работает только в классе ul)-->
+    <ul class="menu">
+        <li>
+            <a href="#">Frontend</a>
+        </li>
+        <li>
+            <a href="#">Backend</a>
+        </li>
+        <li>
+            <a href="#">Weekend</a>
+        </li>
+    </ul>
+
+    <!-- Дочерний селектор (работает на всех элементах a, которые вложены в элементы li)-->
+    <ul class="menu2">
+        <li>
+            <a href="#">А вы продаете рыбов?</a>
+        </li>
+        <li>
+            <a href="#">Нет, просто показываю</a>
+        </li>
+        <li>
+            <a href="#">Красивое...</a>
+        </li>
+    </ul>
+
+    <!-- Сестринский селектор -->
+    <div>
+        <h2 class="chrono">Хронология пилотируемых космических полётов</h2>
+            <h3>2021</h3>
+                <p class="title1">«Союз МС-18»</p>
+            <h3>2020</h3>
+                <p class="title1">«Союз МС-17»</p> 
+                <p class="title1">«SpaceX Crew-1»</p> <!-- Не перенимает заданные свойства, поскольку сестринский селектор распространяется только на элемент, идущий непосредственно за ним (если они имеют общего родителя)-->
+            <h3>2019</h3>
+                <p class="title1">«SpaceX DM-2»</p>
+    </div>
+
+    <!-- Общий селектор смежных элементов (распространяется на все уровни иерархии)-->
+    <div class="title">
+        <h4>The International</h4>
+            <p class="team">Natus Vincere</p>
+            <p class="team">Team Spirit</p>
+            <p class="team">Virtus.Pro</p>
+    </div>
+
+    <!-- Группирующий селектор -->
+    <div>
+        <h5>Counter Strike</h5>
+        <h6>Dota 2</h6>
+    </div>
+
+    <!-- Селектор атрибутов -->
+    <div>
+        <input type="text" value="Введите имя">
+        <input type="text" value="Год рождения">
+        <input type="text" value="Место работы">
+    </div>
+
+    <!-- Универсальный селектор -->
+    <div>
+        <p class="exception">
+            <span>In</span>
+        </p>
+        <p>
+            <span class="exception">In</span>between
+        </p>
+    </div>
+
+    <!-- Псевдокласс :hover -->
+
+    <div class="container">
+        <img src="images/germany.jpeg" alt="Германия">
+        <div class="overlay">
+           <span class="country">Германия</span>
+        </div>
+    </div>
+    <!-- Псевдокласс :nth-last-of-type / first-child / :note()-->
+<div class="container1">
+    <div class="russia">
+        <ul>
+            <li>каждый</li>
+            <li class="item">охотник</li>
+            <li>желает</li>
+            <li>знать</li>
+            <li class="item">где</li>
+            <li>сидит</li>
+            <li class="item">фазан</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
