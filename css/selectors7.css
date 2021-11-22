@@ -1,0 +1,38 @@
+#parent {
+    color:blue;
+}
+
+h1 {
+    color: red;
+}  /* Стили непосредственно соответствующих элементов всегда предпочитаются унаследованным стилям, независимо от специфичности унаследованного правила. */
+
+/* h1 {
+    color: black;
+    } -- перепишет "Привет" в черный, поскольку учитывается последнее правило.*/
+
+/* 
+div {
+    color:seagreen;
+}
+
+div p { 
+    color:slateblue;
+} - перезаписывает предыдущий, поскольку специфичность выше
+
+div .content p {
+    color: red;
+}
+
+div .content p:hover {
+    color:saddlebrown;
+    text-align: center;
+} перезаписывает предыдущий, поскольку специфичность выше 
+
+#pagewrapper div {
+    color: green;
+}
+
+#pagewrapper div.content {
+    color: green;
+} */
+
